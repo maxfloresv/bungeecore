@@ -1,0 +1,12 @@
+name: Core
+version: '${project.version}'
+main: cl.max.core.Core
+api-version: 1.19
+authors: [ vMaximo ]
+commands:
+  fly:
+    usage: /<command>
+    permission: core.fly
+  msg:
+    aliases: [message, m]
+    usage: /<command>
