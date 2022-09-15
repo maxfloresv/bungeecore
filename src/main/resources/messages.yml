@@ -5,8 +5,13 @@ fly_off: "&fModo de vuelo: &cdesactivado &8(&7%player%&8)&f."
 # /msg
 msg_format: "&3[PRIV] &b%sender% &7➥ &b%receiver% &8&l> &r%message%"
 
+# Chat:
+chat_format: "{PREFIX}&7{USER}&8: &f{MESSAGE}"
+
 # Varios
 no_perms: "&cNo tienes permisos para hacer esto."
 not_connected: "&cEse usuario no está conectado."
 no_player_instance: "Solo puedes enviar este comando desde el servidor."
 use: "&cUso correcto: %cmd%"
+join_msg: "&8[&a+&8] &e%player% &aha entrado."
+leave_msg: "&8[&c+&8] &e%player% &cha salido."
