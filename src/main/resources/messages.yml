@@ -4,6 +4,7 @@ fly_off: "&fModo de vuelo: &cdesactivado &8(&7%player%&8)&f."
 
 # /msg
 msg_format: "&3[PRIV] &b%sender% &7➥ &b%receiver% &8&l> &r%message%"
+cant_send_yourself: "&c¡No te puedes enviar un mensaje a ti mismo!"
 
 # Chat:
 chat_format: "{PREFIX}&7{USER}&8: &f{MESSAGE}"
@@ -15,3 +16,5 @@ no_player_instance: "Solo puedes enviar este comando desde el servidor."
 use: "&cUso correcto: %cmd%"
 join_msg: "&8[&a+&8] &e%player% &aha entrado."
 leave_msg: "&8[&c+&8] &e%player% &cha salido."
+last_death: "&6&l¡Has muerto! &fTus coordenadas eran &8(&7%x%, %y%, %z%&8)&f."
+last_death_tp: "&e¡Haz clic para teletransportarte!"
