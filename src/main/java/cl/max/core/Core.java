@@ -18,6 +18,8 @@ public final class Core extends JavaPlugin {
         // Registramos cada evento en /events/
         getServer().getPluginManager().registerEvents(new PlayerJoin(), this);
         getServer().getPluginManager().registerEvents(new AsyncPlayerChat(), this);
+        getServer().getPluginManager().registerEvents(new PlayerQuit(), this);
+        getServer().getPluginManager().registerEvents(new PlayerDeath(), this);
 
         // Y cada comando de /commands/
         this.getCommand("fly").setExecutor(new Fly());
