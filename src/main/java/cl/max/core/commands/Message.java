@@ -25,6 +25,12 @@ public class Message implements CommandExecutor {
             boolean is_online = Bukkit.getPlayer(args[0]) != null;
             if (is_online) {
                 Player receiver = Bukkit.getPlayer(args[0]);
+                if (receiver.getDisplayName().equals(player.getDisplayName())) {
+                    String err = MessagesConfig.get().getString("cant_send_yourself");
+                    player.sendMessage(StringUtils.colorize(err));
+                    return true;
+                }
+
                 String format = MessagesConfig.get().getString("msg_format")
                         .replace("%sender%", player.getDisplayName())
                         .replace("%receiver%", receiver.getDisplayName())
